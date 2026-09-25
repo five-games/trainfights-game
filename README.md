@@ -50,3 +50,27 @@
 
 # \- Low poly models
 
+# 
+
+# \## Hands
+
+# 
+
+# The hands are not attached directly to the body. Each hand floats and is held at its own default point, and it's fine that it's visible they are not connected to the body.
+
+# 
+
+# When the player attacks with one of the mouse buttons, that hand moves towards a target point and then returns to its default position with some force and speed.
+
+# 
+
+# This gives the game a more goofy feel. It also means the hands react on their own when the player turns, jumps or walks, so there is no need for hand animations.
+
+# 
+
+# \### Prototype
+
+# 
+
+# For the first prototype, the hands will be simple basic shapes (capsules) to test the code before making real hand models.
+
