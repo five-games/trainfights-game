@@ -27,7 +27,7 @@ public class floating : MonoBehaviour
         Vector3 currentParentPosition = transform.parent.position;
         Vector3 delta = currentParentPosition - lastParentPosition;
 
-        Vector3 localDelta = transform.parent.InverseTransformDirection(delta); ;
+        Vector3 localDelta = transform.parent.InverseTransformDirection(delta);
 
         offset -= localDelta * strength;
 
