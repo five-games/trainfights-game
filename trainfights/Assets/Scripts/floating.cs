@@ -31,7 +31,6 @@ public class floating : MonoBehaviour
 
         offset -= localDelta * strength;
 
-        //getting camera back
         Vector3 force = -stiffness * offset - damping * velocity;
         velocity += force * Time.deltaTime;
         offset += velocity * Time.deltaTime;
