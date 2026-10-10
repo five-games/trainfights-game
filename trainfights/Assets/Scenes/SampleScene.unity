@@ -167,6 +167,7 @@ MonoBehaviour:
   stiffness: 100
   damping: 10
   maxOffset: 0.2
+  rotationAmount: 20
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,10 +617,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 744443af2c6d7034386117b9f73abbb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 1
+  strength: 0.5
   stiffness: 100
   damping: 10
-  maxOffset: 0.2
+  maxOffset: 0.07
+  rotationAmount: 20
 --- !u!1 &819596019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,10 +1027,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 744443af2c6d7034386117b9f73abbb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 1
+  strength: 0.5
   stiffness: 100
   damping: 10
-  maxOffset: 0.2
+  maxOffset: 0.07
+  rotationAmount: 20
 --- !u!1 &1059692299
 GameObject:
   m_ObjectHideFlags: 0

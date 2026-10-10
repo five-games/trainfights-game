@@ -1,13 +1,13 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class floating : MonoBehaviour
+public class FloatingCamera : MonoBehaviour
 {
     public float strength = 1f;
     public float stiffness = 100f;
     public float damping = 10f;
     public float maxOffset = 0.2f;
-    
+
     private Vector3 restPosition;
     private Vector3 offset;
     private Vector3 velocity;
