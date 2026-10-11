@@ -19,23 +19,26 @@ public class FloatingCamera : MonoBehaviour
     private Vector3 lastParentPosition;
 
     private float bobTimer;
-    private float currentBobOffset; 
+    private float currentBobOffset;
+
+    private Rigidbody parentRigidbody;
 
     void Start()
     {
         restPosition = transform.localPosition;
         lastParentPosition = transform.parent.position;
+
+        parentRigidbody = transform.parent.GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void LateUpdate()
     {
         Vector3 currentParentPosition = transform.parent.position;
         Vector3 delta = currentParentPosition - lastParentPosition;
 
         //floating
 
-        Vector3 localDelta =
-            transform.parent.InverseTransformDirection(delta);
+        Vector3 localDelta = transform.parent.InverseTransformDirection(delta);
 
         offset -= localDelta * strength;
 
@@ -48,10 +51,10 @@ public class FloatingCamera : MonoBehaviour
 
         //walk bobbing
 
-        Vector3 horizontalDelta = delta;
-        horizontalDelta.y = 0f;
+        Vector3 horizontalVelocity = parentRigidbody.linearVelocity;
+        horizontalVelocity.y = 0f;
 
-        bool isMoving = horizontalDelta.sqrMagnitude > 0.000001f;
+        bool isMoving = horizontalVelocity.sqrMagnitude > 0.01f;
 
         if (isMoving)
         {
