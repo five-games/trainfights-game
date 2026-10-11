@@ -167,7 +167,9 @@ MonoBehaviour:
   stiffness: 100
   damping: 10
   maxOffset: 0.2
-  rotationAmount: 20
+  bobAmount: 0.17
+  bobSpeed: 7
+  bobReturnSpeed: 11.5
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +623,9 @@ MonoBehaviour:
   stiffness: 100
   damping: 10
   maxOffset: 0.07
-  rotationAmount: 20
+  bobAmount: 0.035
+  bobSpeed: 7
+  bobReturnSpeed: 8
 --- !u!1 &819596019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,7 +1035,9 @@ MonoBehaviour:
   stiffness: 100
   damping: 10
   maxOffset: 0.07
-  rotationAmount: 20
+  bobAmount: 0.035
+  bobSpeed: 7
+  bobReturnSpeed: 8
 --- !u!1 &1059692299
 GameObject:
   m_ObjectHideFlags: 0
