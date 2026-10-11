@@ -19,7 +19,7 @@ public class FloatingCamera : MonoBehaviour
     private Vector3 lastParentPosition;
 
     private float bobTimer;
-    private float currentBobOffset;
+    private float currentBobOffset; 
 
     void Start()
     {
