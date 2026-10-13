@@ -1,76 +1,23 @@
-# \# Train Fights
+# Train Fights
 
-# 
+A goofy first-person brawler on a moving train, made in Unity.
 
-# A first-person brawler made in Unity.
+Fight your way through the carriages with your bare fists, send passengers flying and reach the train driver at the front.
 
-# 
+> Early prototype. Work in progress.
 
-# \## Concept
+## The game
 
-# 
+- **First person, fists only.** Left mouse punches with the left hand, right mouse with the right. Hits are strong and knock enemies around.
+- **Multiple enemies per level.** It isn't 1v1. Push through the whole train to get to the driver.
+- **Floating hands.** The hands aren't attached to the body. They hover at their own resting points, fly out when you punch and spring back. They also react on their own when you walk, turn or jump.
+- **Clumsy on purpose.** Movement feels a bit drunk, and the humour is bizarre.
+- **Low poly, loud colours,** with blood effects.
 
-# The player is always standing on a moving train platform, which in reality doesn't move at all.
+## Running it
 
-# 
+Open the `trainfights` folder in Unity Hub (Unity 6000.0.62f1) and play `Assets/Scenes/SampleScene.unity`.
 
-# The player fights with their fists:
+## Credits
 
-# 
-
-# \- \*\*Left mouse button\*\* – punch with the left hand
-
-# \- \*\*Right mouse button\*\* – punch with the right hand
-
-# 
-
-# Punches hit hard and send the NPCs flying around.
-
-# 
-
-# \## Gameplay
-
-# 
-
-# The game is not 1v1. Each level has multiple enemies.
-
-# 
-
-# The player's goal is to reach the train driver at the front of the train, fighting their way through the enemies along the way.
-
-# 
-
-# \## Style
-
-# 
-
-# \- Bizarre, funny and clumsy
-
-# \- Loud, bright but pretty graphics
-
-# \- Low poly models
-
-# 
-
-# \## Hands
-
-# 
-
-# The hands are not attached directly to the body. Each hand floats and is held at its own default point, and it's fine that it's visible they are not connected to the body.
-
-# 
-
-# When the player attacks with one of the mouse buttons, that hand moves towards a target point and then returns to its default position with some force and speed.
-
-# 
-
-# This gives the game a more goofy feel. It also means the hands react on their own when the player turns, jumps or walks, so there is no need for hand animations.
-
-# 
-
-# \### Prototype
-
-# 
-
-# For the first prototype, the hands will be simple basic shapes (capsules) to test the code before making real hand models.
-
+Inspired by Dani's games
